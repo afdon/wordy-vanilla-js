@@ -12,7 +12,7 @@ let answer
 // focusInput()
 
 box.addEventListener("blur", function focus() {
-  
+  box.focus()
 })
 
 async function getAnswer() {
