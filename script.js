@@ -44,7 +44,6 @@ function isLetters(string) {
      }
    else
      {
-     alert("message");
      return false;
      }
   }
