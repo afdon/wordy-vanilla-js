@@ -28,10 +28,10 @@ input {
     /* text-align: center; */
     /* margin: 0 50%; */
     margin: 1rem auto;
-    background-color: whitesmoke;
     border: none;
     /* border: 1px solid white; */
-    color: black;
+    background-color: black;
+    color: white;
     /* border: none; */
     padding: 0.75rem;
     border: none;
@@ -40,14 +40,20 @@ input {
     text-transform: uppercase;
     /* I can't use CW? */
     width: 8rem; 
+    /* visibility: hidden; */
+    /* display: none; */
+    border: 1px solid white;
+    /* box-shadow: none; */
 }
 
 input:focus {
     border: 1px solid white;
+    outline: white;
+    /* box-shadow: none; */
 }
 
 input:focus-visible {
-    border: none;
+    border: 1px solid white;
 }
 
 /* .navbar {

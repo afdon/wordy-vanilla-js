@@ -5,6 +5,13 @@ let unvalidatedGuess = ""
 let validGuess
 let answer
 
+function focusInput() {
+  let focus = document.querySelector("input").focus()
+  if (!focus) focus
+}
+
+focusInput()
+
 async function getAnswer() {
   try {
     const response = await fetch("https://words.dev-apis.com/word-of-the-day?random=1")
@@ -56,6 +63,8 @@ let box = document.querySelector("input");
 
 box.addEventListener("keyup", function (e) {
   console.log(e.key); 
+
+  // if (!box.focus()) box.focus()
 
   if (e.key.length === 1 && isLetters(e.key)) unvalidatedGuess = unvalidatedGuess + (e.key);
 
