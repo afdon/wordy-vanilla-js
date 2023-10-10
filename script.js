@@ -5,12 +5,15 @@ let unvalidatedGuess = ""
 let validGuess
 let answer
 
-function focusInput() {
-  let focus = document.querySelector("input").focus()
-  if (!focus) focus
-}
+// function focusInput() {
+//   let focus = document.querySelector("input").focus()
+//   if (!focus) focus
+// }
+// focusInput()
 
-focusInput()
+box.addEventListener("blur", function focus() {
+  
+})
 
 async function getAnswer() {
   try {
@@ -69,7 +72,8 @@ box.addEventListener("keyup", function (e) {
   if (e.key.length === 1 && isLetters(e.key)) unvalidatedGuess = unvalidatedGuess + (e.key);
 
   if (e.key === 'Backspace' && unvalidatedGuess.length > 1) {
-    unvalidatedGuess.slice(0, -1);
+    // unvalidatedGuess.slice(0, -1);
+    unvalidatedGuess = ""
     console.log(unvalidatedGuess)
   }
 
