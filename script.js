@@ -7,7 +7,7 @@ let answer
 
 async function getAnswer() {
   try {
-    const response = await fetch("https://words.dev-apis.com/word-of-the-day")
+    const response = await fetch("https://words.dev-apis.com/word-of-the-day?random=1")
     const body = await response.json();
     // console.log("The word is", body.word) 
     return body.word;
