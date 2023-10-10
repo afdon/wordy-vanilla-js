@@ -5,15 +5,15 @@ let unvalidatedGuess = ""
 let validGuess
 let answer
 
-// function focusInput() {
-//   let focus = document.querySelector("input").focus()
-//   if (!focus) focus
-// }
-// focusInput()
+function focusInput() {
+  let focus = document.querySelector("input").focus()
+  if (!focus) focus
+}
+focusInput()
 
-box.addEventListener("blur", function focus() {
-  box.focus()
-})
+// box.addEventListener("blur", function focus() {
+//   box.focus()
+// })
 
 async function getAnswer() {
   try {
